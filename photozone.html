@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .my-carousel .carousel-item img {
+  max-height: 100vh;      
+  width: auto;            
+  object-fit: contain;   
+}
+  </style>
+  <body>
+     <!-- шапка сайта с логотипом и навигация -->
+
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="logo.png"
+            alt="Логотип"
+            width="100"
+            height="100"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./photozone.html">Фотозоны</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">О Нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Что искать?"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- шапка сайта с логотипом и навигация -->
+
+
+    <!-- карусель -->
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Фотозоны</h2>
+      
+        <div id="photozoneCarousel" class="carousel slide my-carousel" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/21.png" class="d-block w-100" alt="Фотозона 1">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 w-100 mx-auto" style="max-width: 800px;">
+                <h5>Зимняя сказка</h5>
+                <p>Атмосфера уюта и волшебства в каждом кадре.</p>
+              </div>
+            </div>      
+            
+            <div class="carousel-item">
+              <img src="./img/22.png" class="d-block w-100" alt="Фотозона 2">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 w-100 mx-auto" style="max-width: 800px;">
+                <h5>Бохо в закате</h5>
+                <p>Тёплые оттенки, натуральные материалы и свет солнца.</p>
+              </div>
+            </div>      
+            
+            <div class="carousel-item">
+              <img src="./img/23.png" class="d-block w-100" alt="Фотозона 3">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 w-100 mx-auto" style="max-width: 800px;">
+                <h5>Городская эстетика</h5>
+                <p>Современный минимализм и урбанистика.</p>
+              </div>
+            </div>      
+          </div>
+      
+          <!-- Навигация -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#photozoneCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#photozoneCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </section>
+      
+  </body>
+
+  <!-- карусель -->
+
+  <!-- footer  -->
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="./index.html" class="nav-link px-2 text-body-secondary"
+          >Главная</a
+        >
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-secondary">Фотозоны</a>
+      </li>
+      <li class="nav-item">
+        <a href="./about.html" class="nav-link px-2 text-body-secondary"
+          >О Нас</a
+        >
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-secondary">Контакты</a>
+      </li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2025 Creative Studio</p>
+  </footer>
+  <!-- footer  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
